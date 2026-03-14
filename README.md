@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Diagram Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+Diagram Dashboard is a React application that allows users to upload a diagram image and view a list of circuit components in a sidebar. Users can zoom into the diagram and select components from the list.
 
-In the project directory, you can run:
+This project demonstrates React fundamentals, component structure, and UI layout.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Upload Diagram
 
-### `npm test`
+* Upload image files (PNG/JPG)
+* Display uploaded file name
+* Show preview of the uploaded image
+* Allow replacing the uploaded image
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Diagram Viewer
 
-### `npm run build`
+* Display uploaded diagram
+* Zoom In functionality
+* Zoom Out functionality
+* Reset zoom
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Components Sidebar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Displays mock component data:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Resistor
+* Capacitor
+* Diode
+* Transistor
 
-### `npm run eject`
+When a component is clicked:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* The component is highlighted in the sidebar
+* The selected component name is displayed below the diagram viewer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dashboard Layout
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The dashboard contains:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Upload section at the top
+* Two column layout below:
 
-## Learn More
+  * Left side: Diagram viewer
+  * Right side: Components list
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Responsive Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The interface works properly on desktop and tablet screens.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+* React.js
+* React Hooks (useState, useEffect)
+* JavaScript (ES6)
+* CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+src
+├── components
+│   ├── UploadBox.js
+│   ├── DiagramViewer.js
+│   └── ComponentsList.js
 
-### Advanced Configuration
+├── pages
+│   └── Dashboard.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+├── services
+│   └── api.js
 
-### Deployment
+├── App.js
+├── index.js
+└── App.css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Installation & Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Install dependencies
+
+npm install
+
+### Start the development server
+
+npm start
+
+The application will run at:
+
+http://localhost:3000
+
+---
+
+## Author
+
+Kolla Yogendra Sai Balaji
